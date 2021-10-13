@@ -119,7 +119,7 @@
                                                     </div>
                                                        
                                                     <div class="card-header-right">
-                                                        <a href="delete_schedule_department.php"  class="btn btn-danger " style="border-radius: 50px; font-size: 20px; font-weight: bold;"><i class="fa fa-refresh text-light "></i> CANCEL SCHEDULES</a>
+                                                        <a href="delete_schedule.php"  class="btn btn-danger " style="border-radius: 50px; font-size: 20px; font-weight: bold;"><i class="fa fa-refresh text-light "></i> CANCEL SCHEDULES</a>
                                                         
                                                     </div>
                                                         
