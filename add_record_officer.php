@@ -3,8 +3,7 @@
  $dbb = new operations();
  $dbb->admin_access_controll();
  $dbb->add_record_officer();
-/* $main_count = $dbb->fetch_count();
- $hospital_count = mysqli_fetch_array($main_count)["count(*)"];*/
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

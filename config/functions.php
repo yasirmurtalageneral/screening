@@ -273,6 +273,44 @@ class operations extends dbconfig{
     //SEND MESSAGE TEMPLATE FOR DEPARTMENTAL CLEARANCE SCHEDULLE
     public function sendMessage($phone, $name, $dateSchedulled, $timeSchedulled) {
 
+                    if (!empty($phone)) {
+                        $phoneNumber = '+234'.substr($phone,1);
+                        $MessageBody = "Hello ".$name.", You are scheduled for departmental clearance on ".$dateSchedulled." from ".$timeSchedulled." ";
+                        $username = 'TEAMKPT';
+                    }else{
+                        $phoneNumber = '+2348102564648';
+                        $MessageBody = "Hello ".$name.", You are scheduled for departmental clearance on ".$dateSchedulled." from ".$timeSchedulled." ";
+                        $username = 'TEAMKPT';
+                    }
+                    
+
+                    $curl = curl_init();
+
+                    curl_setopt_array($curl, array(
+                      CURLOPT_URL => 'https://fsi.ng/api/v1/africastalking/version1/messaging',
+                      CURLOPT_RETURNTRANSFER => true,
+                      CURLOPT_ENCODING => '',
+                      CURLOPT_MAXREDIRS => 10,
+                      CURLOPT_TIMEOUT => 0,
+                      CURLOPT_FOLLOWLOCATION => true,
+                      CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                      CURLOPT_CUSTOMREQUEST => 'POST',
+                      CURLOPT_POSTFIELDS =>'{
+                        "username" : "'.$username.'",
+                        "to" : "'.$phoneNumber.'",
+                        "message": "'.$MessageBody.'"
+                    }',
+                      CURLOPT_HTTPHEADER => array(
+                        'sandbox-key: W9H1bC4eTBVeuxKSVx8FshzaYxzjlYnV1634023324',
+                        'Content-Type: application/json'
+                      ),
+                    ));
+
+                    $response = curl_exec($curl);
+
+                    curl_close($curl);
+                
+
        $body = "Hello ".$name.", You are scheduled for departmental clearance on ".$dateSchedulled." from ".$timeSchedulled." ";
              // $body = preg_replace('/[^a-zA-Z0-9\']/', '_',$body);
 
@@ -437,6 +475,43 @@ class operations extends dbconfig{
 
      //SEND MESSAGE TEMPLATE FOR STUDENT AFFAIRS CLEARANCE SCHEDULLE
     public function sendMessageStudentAffairs($phone, $name, $dateSchedulled, $timeSchedulled) {
+
+         if (!empty($phone)) {
+                        $phoneNumber = '+234'.substr($phone,1);
+                        $MessageBody = "Hello ".$name.", You are scheduled for student affairs clearance on ".$dateSchedulled." from ".$timeSchedulled." ";
+                        $username = 'TEAMKPT';
+                    }else{
+                        $phoneNumber = '+2348102564648';
+                        $MessageBody = "Hello ".$name.", You are scheduled for student affairs clearance on ".$dateSchedulled." from ".$timeSchedulled." ";
+                        $username = 'TEAMKPT';
+                    }
+                    
+
+                    $curl = curl_init();
+
+                    curl_setopt_array($curl, array(
+                      CURLOPT_URL => 'https://fsi.ng/api/v1/africastalking/version1/messaging',
+                      CURLOPT_RETURNTRANSFER => true,
+                      CURLOPT_ENCODING => '',
+                      CURLOPT_MAXREDIRS => 10,
+                      CURLOPT_TIMEOUT => 0,
+                      CURLOPT_FOLLOWLOCATION => true,
+                      CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                      CURLOPT_CUSTOMREQUEST => 'POST',
+                      CURLOPT_POSTFIELDS =>'{
+                        "username" : "'.$username.'",
+                        "to" : "'.$phoneNumber.'",
+                        "message": "'.$MessageBody.'"
+                    }',
+                      CURLOPT_HTTPHEADER => array(
+                        'sandbox-key: W9H1bC4eTBVeuxKSVx8FshzaYxzjlYnV1634023324',
+                        'Content-Type: application/json'
+                      ),
+                    ));
+
+                    $response = curl_exec($curl);
+
+                    curl_close($curl);
 
        $body = "Hello ".$name.", You are scheduled for student affairs clearance on ".$dateSchedulled." from ".$timeSchedulled." ";
              // $body = preg_replace('/[^a-zA-Z0-9\']/', '_',$body);
