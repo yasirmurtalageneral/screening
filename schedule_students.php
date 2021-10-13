@@ -112,9 +112,16 @@
                                                 <div class="card">
                                             <div class="card-header">
                                                 <h3>Admission List</h3>
-                                                <div class="card-header-right">
-                                                    
+                                                <div class="card-header">
+                                                    <div class="card-header-left">
                                                         <a href="schedule.php"  class="btn btn-primary " style="border-radius: 50px; font-size: 20px; font-weight: bold;"><i class="fa fa-refresh text-light "></i> SCHEDULE STUDENT(s)</a>
+                                                        
+                                                    </div>
+                                                       
+                                                    <div class="card-header-right">
+                                                        <a href="delete_schedule_department.php"  class="btn btn-danger " style="border-radius: 50px; font-size: 20px; font-weight: bold;"><i class="fa fa-refresh text-light "></i> CANCEL SCHEDULES</a>
+                                                        
+                                                    </div>
                                                         
                                                 </div>
                                             </div>
