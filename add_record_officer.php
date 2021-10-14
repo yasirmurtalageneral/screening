@@ -146,14 +146,10 @@
                                                                     <select class="form-control" name="department">
                                                                         <option>Select Department</option>
                                                                         <option value="Computer Science">Computer Science</option>
-                                                                        <option value="Tsalli biyu">Tsalli biyu</option>
-                                                                        <option value="Yindiski">Yindiski</option>
-                                                                        <option value="Roseline">Roseline</option>
-                                                                        <option value="Dogo nini">Dogo nini</option>
-                                                                        <option value="Tudun wada">Tudun wada</option>
-                                                                        <option value="Tsohuwar kasuwa">Tsohuwar kasuwa</option>
-                                                                        <option value="Unguwan bolewa">Unguwan bolewa</option>
-                                                                        <option value="Locust">Locust</option>
+                                                                        <option value="SLT">SLT</option>
+                                                                        <option value="Food Tech">Food Technology</option>
+                                                                        <option value="Printing Technology">Printing Technology</option>
+                                                                       
                                                                     </select>
                                                                     <span class="form-bar"></span> 
                                                                 </div>

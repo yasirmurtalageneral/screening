@@ -147,14 +147,10 @@
                                                                     <select class="form-control" name="college">
                                                                         <option>Select College</option>
                                                                         <option value="CST">CST</option>
-                                                                        <option value="Tsalli biyu">Tsalli biyu</option>
-                                                                        <option value="Yindiski">Yindiski</option>
-                                                                        <option value="Roseline">Roseline</option>
-                                                                        <option value="Dogo nini">Dogo nini</option>
-                                                                        <option value="Tudun wada">Tudun wada</option>
-                                                                        <option value="Tsohuwar kasuwa">Tsohuwar kasuwa</option>
-                                                                        <option value="Unguwan bolewa">Unguwan bolewa</option>
-                                                                        <option value="Locust">Locust</option>
+                                                                        <option value="COE">COE</option>
+                                                                        <option value="CASSS">CASSS</option>
+                                                                        <option value="CBMS">CBMS</option>
+                                                                        <option value="CES">CES</option>
                                                                     </select>
                                                                     <span class="form-bar"></span> 
                                                                 </div>
