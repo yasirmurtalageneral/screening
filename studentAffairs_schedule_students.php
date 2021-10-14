@@ -3,6 +3,7 @@
  $dbb = new operations();
  $dbb->studentAffair_access_controll();
  $data = $dbb->fetch_all_students();
+ $dbb->cancel_schedule_studentAffairs();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -109,6 +110,7 @@
 
                                             <div class="col-sm-12">
                                                 <div class="card">
+                                                    <form method="post">
                                             <div class="card-header">
                                                 <h3>Admission List</h3>
                                                 <div class="card-header">
@@ -118,11 +120,12 @@
                                                     </div>
                                                        
                                                     <div class="card-header-right">
-                                                        <a href="delete_schedule_department.php"  class="btn btn-danger " style="border-radius: 50px; font-size: 20px; font-weight: bold;"><i class="fa fa-refresh text-light "></i> CANCEL SCHEDULES</a>
+                                                       <button type="submit" name="cancel_schedule" class="btn btn-danger " style="border-radius: 50px; font-size: 20px; font-weight: bold;"><i class="fa fa-refresh text-light "></i> CANCEL SCHEDULES</button>
                                                         
                                                     </div>
                                                         
                                                 </div>
+                                                <?php $dbb->display_message(); ?>
                                             </div>
                                             <div class="card-block table-border-style">
                                                 <div class="table-responsive">
@@ -136,6 +139,7 @@
                                                                 <th>Email</th>
                                                                 <th>Phone</th>
                                                                 <th>Status</th>
+                                                                <th>Action</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -152,6 +156,7 @@
                                                                 <td><?= $row["Email"]; ?></td>
                                                                 <td><?= $row["Phone"]; ?> </td>
                                                                 <td class="<?= $row["IsScheduleStudentAffairs"] == "0" ? "text-danger" : "text-success"; ?>"><?= $row["IsScheduleStudentAffairs"] == "0" ? "Not Scheduled" : "Scheduled"; ?></td>
+                                                                <td><input type="checkbox" name="check[]" value="<?php echo $row["EntryID"]; ?>"></td>
                                                                 
                                                             </tr>
                                                             <?php } ?>
@@ -160,6 +165,8 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <input type="hidden" name="ColegeID" id="ColegeID" value="<?= $_SESSION['StudentAffairsID']; ?>" hidden>
+                                    </form>
                                             </div>
                                         </div>
                                     </div>

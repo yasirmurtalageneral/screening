@@ -3,7 +3,7 @@
  require_once('config/db.php');
  $dbb = new operations();
  $dbb->department_access_controll();
- $dbb->schedule_date_time();
+ $dbb->cancel_schedule();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -149,12 +149,11 @@
                                                                 </div>
 
                                                                  <div class="form-group form-info col-md-6 offset-sm-3 mt-4">
-                                                                     <button type="submit" name="btn_schedule_students" id="btn_schedule_students" class="btn btn-primary form-control" style="border-radius: 50px; font-size: 20px; font-weight: bold;"><i class="fa fa-refresh text-light "></i> SCHEDULE STUDENT(s)</button>
+                                                                     <button type="submit" name="cancel_schedule" id="cancel_schedule" class="btn btn-danger form-control" style="border-radius: 50px; font-size: 20px; font-weight: bold;"><i class="fa fa-trash text-light "></i> CANCEL SCHEDULE</button>
                                                         <input type="hidden" name="DepartmentID" id="DepartmentID" value="<?= $_SESSION['DepartmentID']; ?>" hidden>
                                                         <input type="hidden" name="DepartmentName" id="DepartmentName" value="<?= $_SESSION['Department']; ?>" hidden>
-
                                                                 </div>
-<div class="col-sm-8 offset-sm-2 alert alert-success"><b>NOTE: Schedule time are '8:30 - 10:30', '10:30 - 12:30', '12:30 - 3:30'</b></div>
+
                                                             </div>
 
                                                         </form>

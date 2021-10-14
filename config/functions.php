@@ -168,6 +168,115 @@ class operations extends dbconfig{
     }
 
 
+    //Schedule Student
+    public function cancel_schedule(){
+        
+        global $db;
+
+        if (isset($_POST['cancel_schedule'])) {
+
+            $check = $_POST['check'];
+            $DepartmentID = $_POST['DepartmentID'];
+
+             if ($this->delete_schedule($check, $DepartmentID)) {
+
+                $this->set_message('<div class="alert alert-success bg-success text-white text-center"> Schedule cancel successfully</div>');
+                 ?>
+                    <script>
+                        setTimeout(() => window.location.href ="schedule_students.php", 2000);
+                    </script>
+
+                <?php
+                # code...
+            }else{
+                $this->set_message('<div class="alert alert-danger"> Failed! </div>');
+            }
+
+        }
+    }
+
+    public function delete_schedule($check, $DepartmentID)
+    {
+
+        global $db;
+        $students = [];
+        foreach ($check as $student) {
+            // code...
+            $req = "UPDATE student SET IsSchedule='0', IsDepartmentCleared='0' WHERE EntryID LIKE '$student'";
+            $action = mysqli_query($db->connection, $req);
+        }
+
+        foreach ($check as $chk) {
+            $query = "DELETE FROM schedule WHERE StudentID LIKE '$chk' AND DepartmentID LIKE '$DepartmentID'";
+            $result = mysqli_query($db->connection, $query);
+        }
+
+        
+        if ($result) {
+            return true;
+            // code...
+        }else{
+            return false;
+        }
+    }
+
+
+ //Schedule Student
+    public function cancel_schedule_studentAffairs(){
+        
+        global $db;
+
+        if (isset($_POST['cancel_schedule'])) {
+
+            $check = $_POST['check'];
+            $CollegeID = $_POST['ColegeID'];
+
+             if ($this->delete_schedule_studentAffairs($check, $CollegeID)) {
+
+                $this->set_message('<div class="alert alert-success bg-success text-white text-center"> Schedule cancel successfully</div>');
+                 ?>
+                    <script>
+                        setTimeout(() => window.location.href ="studentAffairs_schedule_students.php", 3000);
+                    </script>
+
+                <?php
+                # code...
+            }else{
+                $this->set_message('<div class="alert alert-danger"> Failed! </div>');
+            }
+
+        }
+    }
+
+    public function delete_schedule_studentAffairs($check, $CollegeID)
+    {
+
+        global $db;
+        $students = [];
+        foreach ($check as $student) {
+            // code...
+            $req = "UPDATE student SET IsScheduleStudentAffairs='0', IsStudentAffairsCleared='0' WHERE EntryID LIKE '$student'";
+            $action = mysqli_query($db->connection, $req);
+        }
+
+        foreach ($check as $chk) {
+            $query = "DELETE FROM schedule WHERE StudentID LIKE '$chk' and CollegeID LIKE '$CollegeID'";
+            $result = mysqli_query($db->connection, $query);
+        }
+
+        
+        if ($result) {
+            return true;
+            // code...
+        }else{
+            return false;
+        }
+    }
+
+
+
+
+
 
 
     //Schedule Student
