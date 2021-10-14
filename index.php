@@ -145,7 +145,7 @@
                                                         </div></a>
                                                     </div>
 
-                                                    <div class="col-md-12 text-center" style="margin-top: 180px;"> <h3>Designed By: TeamCODED Edusoft Limited</h3></div>
+                                                    <div class="col-md-12 text-center" style="margin-top: 180px;"> <h3>Designed By: Team KPTS</h3></div>
                                                     
                                                   
                                                     <!-- sale card end -->
