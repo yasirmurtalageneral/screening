@@ -88,14 +88,14 @@
 
 
                                             <!-- order-visitor end -->
-                                        <div class="col-md-12 text-center" style="margin-top: 20px;"> <h3>DESIGN AND IMPLEMENTATION OF AN ONLINE CLEARANCE DATE/TIME SCHEDULING SYSTEM</h3></div>
+                                        <div class="col-md-12 text-center" style="margin-top: 20px;"> <h3>TEST SYSTEM</h3></div>
                                             
                                             <div class="col-xl-12 col-md-12" style="margin-top: 100px;">
                                                 <div class="row">
                                                     <!-- sale card start -->
 
                                                     <div class="col-md-6">
-                                                        <a href="student.php">
+                                                        <a href="#">
                                                         <div class="card text-center order-visitor-card">
                                                             <div class="card-block">
                                                                 <h6 class="m-b-0"></h6>
@@ -108,7 +108,7 @@
                                                         </div></a>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <a href="department_login.php">
+                                                        <a href="#">
                                                         <div class="card text-center order-visitor-card">
                                                             <div class="card-block">
                                                                 <h6 class="m-b-0"></h6>
@@ -121,7 +121,7 @@
                                                     </div>
                                                     <div class="col-sm-12" style="margin-bottom: 60px;">&nbsp;</div>
                                                     <div class="col-md-6">
-                                                        <a href="studentAffairs_login.php">
+                                                        <a href="#">
                                                         <div class="card text-center order-visitor-card">
                                                             <div class="card-block">
                                                                 <h6 class="m-b-0"></h6>
@@ -145,7 +145,7 @@
                                                         </div></a>
                                                     </div>
 
-                                                    <div class="col-md-12 text-center" style="margin-top: 180px;"> <h3>Designed By: Team KPTS</h3></div>
+                                                    <div class="col-md-12 text-center" style="margin-top: 180px;"> <h3>Designed By: mURTALA YASIR</h3></div>
                                                     
                                                   
                                                     <!-- sale card end -->

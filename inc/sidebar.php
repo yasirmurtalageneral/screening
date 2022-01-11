@@ -28,31 +28,7 @@
                                 </li>
                             </ul>
                              <ul class="pcoded-item pcoded-left-item">
-                                <li class="pcoded-hasmenu">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="fa fa-users"></i><b></b></span>
-                                        <span class="pcoded-mtext">Student</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                    <ul class="pcoded-submenu">
-                                        <li class="">
-                                    <a href="add_students.php" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-add"></i></span>
-                                        <span class="pcoded-mtext"> Add Student</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="manage_students.php" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-file"></i></span>
-                                        <span class="pcoded-mtext"> Manage Student</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                                       
-                                    </ul>
-                                </li>
-                            </ul>
+                               <!--  -->
 
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu">
@@ -107,14 +83,6 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <!--  <ul class="pcoded-item pcoded-left-item">
-                                <li class="">
-                                    <a href="manage_hospital_registration.php" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-files"></i><b>D</b></span>
-                                        <span class="pcoded-mtext">Manage Clearance</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                            </ul> -->
+                            
                         </div>
                     </nav>

@@ -2,10 +2,7 @@
  require_once('config/db.php');
  $dbb = new operations();
  $dbb->admin_access_controll();
- $main_count = $dbb->fetch_count();
- $main_count2 = $dbb->fetch_schedule_count();
- $student_count = mysqli_fetch_array($main_count)["count(*)"];
- $scheduling_count = mysqli_fetch_array($main_count2)["count(*)"];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -85,7 +82,7 @@
                                     <div class="col-md-8">
                                         <div class="page-header-title">
                                             <h5 class="m-b-10">Dashboard</h5>
-                                            <p class="m-b-0">Welcome to Clearance Sceduling System</p>
+                                            <p class="m-b-0">Welcome to STAFF REGISTRATION PORTAL</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -122,46 +119,24 @@
                                                     <div class="col-md-6">
                                                         <div class="card text-center order-visitor-card">
                                                             <div class="card-block">
-                                                                <h6 class="m-b-0">Total Student Registered</h6>
-                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-users m-r-15 text-c-red"></i><?=   $student_count; ?></h4>
-                                                                <p class="m-b-0">Number of Registered Student</p>
+                                                                <h6 class="m-b-0">Total Student Affairs Registered</h6>
+                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-users m-r-15 text-c-red"></i>10</h4>
+                                                                <p class="m-b-0">Number of Registered Student Affairs officers</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="card text-center order-visitor-card">
                                                             <div class="card-block">
-                                                                <h6 class="m-b-0"> Total student Scheduled</h6>
-                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-home m-r-15 text-c-green"></i><?=   $scheduling_count; ?></h4>
-                                                                <p class="m-b-0">Number of Scheduled Students</p>
+                                                                <h6 class="m-b-0"> Total Student Affairs Registered</h6>
+                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-home m-r-15 text-c-green"></i>20</h4>
+                                                                <p class="m-b-0">Number of Record Officers</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     
                                                     
-                                                   <!--  <div class="col-md-6">
-                                                        <div class="card bg-c-red total-card">
-                                                            <div class="card-block">
-                                                                <div class="text-left">
-                                                                    <h4>489</h4>
-                                                                    <p class="m-0">Total Comment</p>
-                                                                </div>
-                                                                <span class="label bg-c-red value-badges">15%</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="card bg-c-green total-card">
-                                                            <div class="card-block">
-                                                                <div class="text-left">
-                                                                    <h4>$5782</h4>
-                                                                    <p class="m-0">Income Status</p>
-                                                                </div>
-                                                                <span class="label bg-c-green value-badges">20%</span>
-                                                            </div>
-                                                        </div>
-                                                    </div> -->
-                                                    <!-- sale card end -->
+                                                 
                                                 </div>
                                             </div>
 

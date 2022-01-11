@@ -1,4 +1,4 @@
- <title>Clearance  | System</title>
+ <title>Regitration Portal</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">

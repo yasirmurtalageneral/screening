@@ -16,7 +16,7 @@
                             </div>
                         </div>
                         <a href="hospital_dashboard.php">
-                            <h6><i class="fa fa-user"></i> Clearance System</h6>
+                            <h6><i class="fa fa-user"></i> STAFF REGISTRATION/PORTAL</h6>
                         </a>
                         <a class="mobile-options waves-effect waves-light">
                             <i class="ti-more"></i>
@@ -33,7 +33,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="" style="margin-top: 15px;"><h4>HOSPITAL PORTAL</h4></a>
+                                <a href="" style="margin-top: 15px;"><h4>STAFF REGISTRATION/PORTAL</h4></a>
                             </li>
                         </ul>
                         <ul class="nav-right">
@@ -41,7 +41,7 @@
                             <li class="user-profile header-notification">
                                 <a href="#!" class="waves-effect waves-light">
                                     <img src="assets/images/user-icon.jpg" class="img-radius" alt="User-Profile-Image">
-                                    <span>Hospital</span>
+                                    <span>Kadpoly</span>
                                     <i class="ti-angle-down"></i>
                                 </a>
                                 <ul class="show-notification profile-notification">

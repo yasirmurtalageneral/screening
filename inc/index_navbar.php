@@ -16,7 +16,7 @@
                             </div>
                         </div>
                         <a href="dashboard.php">
-                            <h6><i class="fa fa-user"></i> Clearance System</h6>
+                            <h6><i class="fa fa-user"></i> STAFF REGISTRATION PORTAL</h6>
                         </a>
                         <a class="mobile-options waves-effect waves-light">
                             <i class="ti-more"></i>
